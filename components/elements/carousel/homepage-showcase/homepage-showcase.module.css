@@ -1,0 +1,96 @@
+.carousel_slider {
+  position: relative;
+  width: 100%;
+  margin: 1rem auto 3rem auto; 
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  /* border: 2px solid red; */
+  user-select: none;
+  background-color: var(--light);
+}
+
+.carousel_item {
+  transition: 0.6s;
+  display: flex;
+  min-width: 100%;
+  max-width: 100%;
+  user-select: none;
+}
+
+.loader {
+  z-index: 2;
+  height: 100vh;
+  position: relative;
+}
+
+.main_item {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 1rem;
+  padding: 4rem 4rem 0rem 4rem;
+}
+.main_item div h2 {
+  font-weight: 500;
+  font-size: 34px;
+}
+.main_item div h2 span {
+  font-weight: 700;
+}
+.main_item div p {
+  margin: 1rem 0;
+}
+
+.showcase_btn_container {
+  margin: 3rem 0 0 0;
+}
+
+
+.main_item_details {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 4rem;
+  /* width: 60%; */
+  justify-content: center;
+}
+
+.main_item_details p{
+  font-size: 14px;
+}
+
+.main_item_img {
+  padding: 1rem 4rem;
+  width: 400px;
+}
+
+.main_item_img img {
+  width: 100px;
+  height: 100px;
+}
+/* button style end here */
+
+/* responsive styling */
+@media screen and (max-width: 768px) {
+  .main_item {
+    flex-direction: column-reverse;
+    padding: 1rem 0;
+    display: block;
+  }
+
+  .main_item div h2 {
+    font-size: 28px;
+  }
+
+  .main_item_details {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;   
+    justify-content: center;
+  }
+
+  .main_item_img{
+    padding: 1rem 4rem;
+    width: 100%;
+    margin-top: 5rem;
+  }
+}

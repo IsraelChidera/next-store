@@ -1,0 +1,109 @@
+.container {
+    background: #333344;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+.flexed1 h3 {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.flexed1 p {
+    font-size: 14px; 
+    color: #FFFFFF;
+    margin-top: 0.8rem;
+    padding-right: 1rem;
+}
+
+.containerFlex {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+.flexed2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.flexed2 form input {
+    padding: 10px 75px 10px 10px;
+    background: #1696F2;
+    color: #FFFFFF;
+    outline: #333344;
+    border: none;
+    border-radius: 20px;
+}
+
+.flexed2 form input::placeholder {
+    color: #FFFFFF;
+}
+
+.flexed2 form input:focus {
+    color: #FFFFFF;
+}
+
+.icon {
+    position: absolute;    
+    top: 12%;
+    right: 2%;
+    border-radius: 50%;
+    padding: 6px;
+    border: none;
+    color: #334;
+    cursor: pointer;
+}
+
+.emailError {
+    font-size: 12px;
+    margin-top: 1rem;
+    text-align: right;
+    color: #e64444;
+}
+
+@media only screen and (max-width: 928px) {
+    .containerFlex {
+        display: block;        
+    }
+
+    .flexed2 {
+        margin-top: 2rem;        
+        display: block;        
+        padding-left: 0rem;
+    }
+
+    .icon {
+        top: 4px;
+        /* left: 217px; */
+        border-radius: 50%;
+        padding: 6px;
+        border: none;
+    }
+
+    .flexed2 form input {        
+        width: 100%;        
+    }
+    
+  
+}
+
+@media only screen and (max-width: 428px) { 
+    .containerFlex {        
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 283px) {
+    .icon{        
+        display: none;
+    }
+
+    .flexed2 form input {        
+        width: 100%;        
+    }
+}
+ 
